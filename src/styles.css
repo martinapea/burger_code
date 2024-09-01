@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/Merriweather-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Extrabold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('/Gilroy-Light.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #191411;
+    padding-inline: 160px;
+    overflow-x: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/main_bg.png");
+    background-repeat: no-repeat;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

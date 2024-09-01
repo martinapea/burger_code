@@ -1,0 +1,135 @@
+<header id="header" class="header">
+  <img src="logo.svg" alt="" />
+  <ul class="header__menu-list">
+    <li *ngFor="let menuItem of menuItems">
+      <a href="">{{ menuItem }}</a>
+    </li>
+  </ul>
+  <button class="header__btn">$</button>
+</header>
+<!-- <img src="main_bg.png" alt="background" class="main-bg" /> -->
+<main class="main">
+  <div class="menu-container">
+    <div class="new-menu">
+      <span class="standard-text">Новое меню</span>
+    </div>
+    <img class="main-burger" src="main_burger.png" alt="" />
+    <h1 class="Burger_chedher">БУРГЕР ЧЕДДЕР</h1>
+    <p class="text_signature">
+      Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться
+      отличным вкусом наших бургеров. Готовим для вас лучшие бургеры в городе из
+      отборной мраморной говядины.
+    </p>
+    <button class="menu-btn btn">
+      <span class="btn-text text">Смотреть меню</span>
+    </button>
+  </div>
+  <div class="info-container">
+    <h2 class="title-text">ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
+    <div class="texts-icons-container">
+      <div class="text-with-icon">
+        <img src="burger.png" alt="" class="main-icon" />
+        <span class="title-under-icon">Авторские рецепты</span>
+        <span class="text-under-icon"
+          >Наши бургеры обладают уникальным сочетанием вкусов и не похожи
+          ни на какие другие. Мы тщательно отбираем лучшие ингредиенты
+          и сочетания вкусов для нашего меню.
+        </span>
+      </div>
+      <div class="text-with-icon">
+        <img src="meat.png" alt="" class="main-icon" />
+        <span class="title-under-icon">Мраморная говядина</span>
+        <span class="text-under-icon"
+          >Для наших бургеров мы используем отборную 100% мраморную говядину,
+          которую закупаем исключительно у фермеров. Мы уверены в качестве
+          нашего мяса.
+        </span>
+      </div>
+      <div class="text-with-icon">
+        <img src="food truck.png" alt="food_truck" class="main-icon" />
+
+        <span class="title-under-icon">Быстрая доставка</span>
+        <span class="text-under-icon"
+          >Мы доставляем в пределах МКАД за 30 минут, а если не успеем —
+          доставка бесплатно. Мы тщательно упаковываем наши бургеры, чтобы
+          по дороге они не остыли.
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="order-info-container">
+    <h2 class="choose-burger-text title-text">ВЫБЕРИТЕ СВОЙ БУРГЕР</h2>
+    <img class="sun_img" src="burgers_bg.png" alt="burgers_bg" />
+    <div class="burgers-cards-container">
+      <div class="order-card card-container" *ngFor="let burger of burgers">
+        <img class="burger-image" [src]="burger.image" alt="burger" />
+        <h3 class="title-under-icon">{{ burger.name }}</h3>
+        <span class="text-under-icon">
+          {{ burger.composition }}
+        </span>
+        <div class="text-and-btn-container">
+          <div class="text-container">
+            <span class="currency">{{ burger.price }} $</span>
+            <span class="weight">{{ burger.weight }} гр</span>
+          </div>
+          <button class="card-btn btn" (click)="orderClick(burger.name)">
+            <span class="btn-text">Заказать</span>
+            <img src="basket.png" alt="basket" />
+          </button>
+        </div>
+      </div>
+      <!-- <div class="order-card card-container">
+        <img src="burger2.png" alt="burger" />
+        <h4 class="title-under-icon">BBQ с беконом и курицей</h4>
+        <span class="text-under-icon">
+          Булочка бриошь с кунжутом, куриная котлета, сыр чеддер, томат, огурец
+          маринованный, лук маринованный, салат Ромен, бекон, соус BBQ
+        </span>
+        <div class="text-and-btn-container">
+          <div class="text-container">
+            <span class="currency">7 $</span>
+            <span class="weight">390 гр</span>
+          </div>
+          <button class="card-btn btn">
+            <span class="btn-text">Заказать</span>
+            <img src="basket.png" alt="basket" />
+          </button>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <div class="burgers-container">
+    <div #orderContainer class="order-container">
+      <span class="placing-an-order">ОФОРМЛЕНИЕ ЗАКАЗА</span>
+      <img class="footer-back" src="order_image.png" alt="order_image" />
+      <div class="order-card order-form">
+        <span class="form-text"
+          >Заполните все данные и наш менеджер свяжется с вами для подтверждения
+          заказа
+        </span>
+
+        <div class="inputs">
+          <label class="order-label" for="order-input">
+            <input
+              #orderInput
+              placeholder="Ваш заказ"
+              class="order-input"
+              type="text"
+            />
+          </label>
+          <label class="order-label" for="order-input">
+            <input placeholder="Ваше имя" class="order-input" type="text" />
+          </label>
+          <label class="order-label" for="order-input">
+            <input placeholder="Ваш телефон" class="order-input" type="text" />
+          </label>
+          <button mat-button (click)="openDialog()" class="order-btn btn">
+            <span class="btn-text text">Оформить заказ</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer_text">Все права защищены</footer>

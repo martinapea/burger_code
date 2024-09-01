@@ -1,0 +1,354 @@
+.header {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    height: 130px;
+    align-items: center;
+    width: 100%;
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 88px;
+    list-style-type: none;
+}
+
+
+
+.header__btn {
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.main-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 180px;
+
+}
+
+.menu-container {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: -100px;
+}
+
+.main-burger {
+    position: absolute;
+    top: -60px;
+    right: -300px;
+    z-index: -1;
+
+}
+
+.new-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D3320F;
+    width: 137px;
+    height: 45px;
+    border-radius: 100px;
+    margin-top: 102px;
+
+}
+
+.standard-text {
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.05px;
+}
+
+.Burger_chedher {
+    font-size: 120px;
+    line-height: 156px;
+    font-weight: 900;
+    font-family: Merriweather, serif;
+}
+
+.text_signature {
+    font-family: Gilroy, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.4px;
+    text-align: left;
+}
+
+.btn {
+    padding: 19px 50px 19px 50px;
+    border-radius: 8px;
+    background: linear-gradient(95.61deg, #42da23 0%, #E2B438 100%);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(95.61deg, #42da23e1 0%, #e2b538d8 100%);
+}
+
+.menu-btn {
+    width: 260px;
+    height: 62px;
+}
+
+
+.btn-text {
+    color: #191411;
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.05px;
+    text-align: center;
+}
+
+.title-text {
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 80.45px;
+    text-align: center;
+}
+
+.text-with-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 312px;
+    height: 287px;
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.main-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.title-under-icon {
+
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.4px;
+    text-align: center;
+}
+
+.text-under-icon {
+    font-family: Gilroy-Light;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: center;
+
+}
+
+
+.texts-icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+}
+
+.placing-an-order {
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 80.45px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.footer-back {
+    position: absolute;
+    right: 200px;
+    z-index: -1;
+    bottom: -170px;
+
+}
+
+.order-card {
+    width: 384px;
+    height: 564px;
+    border-radius: 16px;
+    border: 1px solid #353535;
+    background: #211A16;
+    transition: transform 0.3s ease-in-out;
+}
+
+.order-card:hover {
+    background: #332a24;
+    transform: scale(1.05);
+}
+
+.order-form {
+    position: relative;
+    left: 610px;
+    width: 424px;
+    height: 555px;
+}
+
+.inputs {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.order-label {
+    width: 344px;
+    height: 62px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    background-image: linear-gradient(135deg, #DA8023 0%, #E2B438 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    margin-left: 40px;
+}
+
+input {
+    caret-color: #FFFFFF;
+    width: 342px;
+    height: 60px;
+    padding: 16px 10px;
+    background: #211A16;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    color: #FFFFFF;
+    font-family: Gilroy, sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.order-btn {
+    width: 344px;
+    height: 62px;
+    margin-left: 40px;
+}
+
+.form-text {
+    display: flex;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.4px;
+    margin-top: 60px;
+    margin-bottom: 40px
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 30px;
+}
+
+.currency {
+    font-family: Gilroy-Light;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.2px;
+    text-align: left;
+}
+
+.weight {
+    font-family: Gilroy-Light;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18.45px;
+    text-align: left;
+    color: #757575;
+}
+
+.card-btn {
+    display: flex;
+    gap: 10px;
+    width: 182px;
+    height: 62px;
+    justify-content: center;
+}
+
+.text-and-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.sun_img {
+    position: absolute;
+    z-index: -1;
+}
+
+.burgers-cards-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+
+}
+
+
+.footer_text {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 180px;
+    height: 170px;
+    color: #FFFFFF;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.6px;
+    text-align: left;
+}
+
+.order-info-container,
+.burgers-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.burger-image {
+    height: 250px;
+    width: 324px;
+}
